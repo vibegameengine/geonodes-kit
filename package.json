@@ -24,6 +24,7 @@
     "coverage": "node tools/coverage.mjs",
     "assets": "node tools/fetchAssets.mjs",
     "reference": "node tools/runBlender.mjs tools/blender/reference.py",
-    "usage": "node tools/runBlender.mjs tools/blender/usage.py"
+    "usage": "node tools/runBlender.mjs tools/blender/usage.py",
+    "cases": "node tools/runBlender.mjs tools/blender/cases.py reference/cases/cases.json"
   }
 }

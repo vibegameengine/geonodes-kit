@@ -1,0 +1,40 @@
+[
+  {
+    "id": "grid-default",
+    "description": "Grid with every input at its default",
+    "tree": { "nodes": [{ "name": "grid", "type": "GeometryNodeMeshGrid" }], "links": [], "output": ["grid", "Mesh"] }
+  },
+  {
+    "id": "grid-3x2",
+    "description": "Grid 2 by 1.5 m with 3 by 2 vertices: vertex, edge, face and corner order",
+    "tree": {
+      "nodes": [{ "name": "grid", "type": "GeometryNodeMeshGrid", "inputs": { "Size X": 2, "Size Y": 1.5, "Vertices X": 3, "Vertices Y": 2 } }],
+      "links": [],
+      "output": ["grid", "Mesh"]
+    }
+  },
+  {
+    "id": "grid-transformed",
+    "description": "Grid moved, rotated about Z by 0.5 rad and scaled by 2 in Components mode",
+    "tree": {
+      "nodes": [
+        { "name": "grid", "type": "GeometryNodeMeshGrid", "inputs": { "Vertices X": 2, "Vertices Y": 2 } },
+        { "name": "move", "type": "GeometryNodeTransform", "inputs": { "Translation": [1, 2, 3], "Rotation": [0, 0, 0.5], "Scale": [2, 2, 2] } }
+      ],
+      "links": [{ "from": ["grid", "Mesh"], "to": ["move", "Geometry"] }],
+      "output": ["move", "Geometry"]
+    }
+  },
+  {
+    "id": "grid-to-points-faces",
+    "description": "Mesh to Points in Faces mode over a 3 by 3 grid",
+    "tree": {
+      "nodes": [
+        { "name": "grid", "type": "GeometryNodeMeshGrid" },
+        { "name": "points", "type": "GeometryNodeMeshToPoints", "properties": { "mode": "FACES" } }
+      ],
+      "links": [{ "from": ["grid", "Mesh"], "to": ["points", "Mesh"] }],
+      "output": ["points", "Points"]
+    }
+  }
+]
