@@ -2,6 +2,7 @@ import type { AttributeSet } from './attributes'
 
 export type Mesh = {
   readonly attributes: AttributeSet
+  readonly cornerEdges: Int32Array
   readonly cornerVertices: Int32Array
   readonly edgeVertices: Int32Array
   readonly faceOffsets: Int32Array

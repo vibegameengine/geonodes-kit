@@ -87,6 +87,7 @@ function toMesh(reference: NonNullable<ReferenceGeometry['mesh']>): Mesh {
   })
   return {
     attributes: toAttributeSet(reference.attributes, MESH_TOPOLOGY),
+    cornerEdges: Int32Array.from(builtIn(reference.attributes, '.corner_edge')),
     cornerVertices: Int32Array.from(reference.cornerVertices),
     edgeVertices: Int32Array.from(reference.edges),
     faceOffsets,

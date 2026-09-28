@@ -2,15 +2,41 @@
   {
     "id": "grid-default",
     "description": "Grid with every input at its default",
-    "tree": { "nodes": [{ "name": "grid", "type": "GeometryNodeMeshGrid" }], "links": [], "output": ["grid", "Mesh"] }
+    "tree": {
+      "nodes": [
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid"
+        }
+      ],
+      "links": [],
+      "output": [
+        "grid",
+        "Mesh"
+      ]
+    }
   },
   {
     "id": "grid-3x2",
     "description": "Grid 2 by 1.5 m with 3 by 2 vertices: vertex, edge, face and corner order",
     "tree": {
-      "nodes": [{ "name": "grid", "type": "GeometryNodeMeshGrid", "inputs": { "Size X": 2, "Size Y": 1.5, "Vertices X": 3, "Vertices Y": 2 } }],
+      "nodes": [
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid",
+          "inputs": {
+            "Size X": 2,
+            "Size Y": 1.5,
+            "Vertices X": 3,
+            "Vertices Y": 2
+          }
+        }
+      ],
       "links": [],
-      "output": ["grid", "Mesh"]
+      "output": [
+        "grid",
+        "Mesh"
+      ]
     }
   },
   {
@@ -18,11 +44,52 @@
     "description": "Grid moved, rotated about Z by 0.5 rad and scaled by 2 in Components mode",
     "tree": {
       "nodes": [
-        { "name": "grid", "type": "GeometryNodeMeshGrid", "inputs": { "Vertices X": 2, "Vertices Y": 2 } },
-        { "name": "move", "type": "GeometryNodeTransform", "inputs": { "Translation": [1, 2, 3], "Rotation": [0, 0, 0.5], "Scale": [2, 2, 2] } }
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid",
+          "inputs": {
+            "Vertices X": 2,
+            "Vertices Y": 2
+          }
+        },
+        {
+          "name": "move",
+          "type": "GeometryNodeTransform",
+          "inputs": {
+            "Translation": [
+              1,
+              2,
+              3
+            ],
+            "Rotation": [
+              0,
+              0,
+              0.5
+            ],
+            "Scale": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
       ],
-      "links": [{ "from": ["grid", "Mesh"], "to": ["move", "Geometry"] }],
-      "output": ["move", "Geometry"]
+      "links": [
+        {
+          "from": [
+            "grid",
+            "Mesh"
+          ],
+          "to": [
+            "move",
+            "Geometry"
+          ]
+        }
+      ],
+      "output": [
+        "move",
+        "Geometry"
+      ]
     }
   },
   {
@@ -30,11 +97,477 @@
     "description": "Mesh to Points in Faces mode over a 3 by 3 grid",
     "tree": {
       "nodes": [
-        { "name": "grid", "type": "GeometryNodeMeshGrid" },
-        { "name": "points", "type": "GeometryNodeMeshToPoints", "properties": { "mode": "FACES" } }
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid"
+        },
+        {
+          "name": "points",
+          "type": "GeometryNodeMeshToPoints",
+          "properties": {
+            "mode": "FACES"
+          }
+        }
       ],
-      "links": [{ "from": ["grid", "Mesh"], "to": ["points", "Mesh"] }],
-      "output": ["points", "Points"]
+      "links": [
+        {
+          "from": [
+            "grid",
+            "Mesh"
+          ],
+          "to": [
+            "points",
+            "Mesh"
+          ]
+        }
+      ],
+      "output": [
+        "points",
+        "Points"
+      ]
+    }
+  },
+  {
+    "id": "grid-line-x1",
+    "description": "Grid with 1 by 4 vertices fed through links: a line of vertices along Y, edges only",
+    "tree": {
+      "nodes": [
+        {
+          "name": "nx",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 1
+          }
+        },
+        {
+          "name": "ny",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 4
+          }
+        },
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid"
+        }
+      ],
+      "links": [
+        {
+          "from": [
+            "nx",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices X"
+          ]
+        },
+        {
+          "from": [
+            "ny",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices Y"
+          ]
+        }
+      ],
+      "output": [
+        "grid",
+        "Mesh"
+      ]
+    }
+  },
+  {
+    "id": "grid-line-y1",
+    "description": "Grid with 4 by 1 vertices fed through links: edges along X starting at edge index 0",
+    "tree": {
+      "nodes": [
+        {
+          "name": "nx",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 4
+          }
+        },
+        {
+          "name": "ny",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 1
+          }
+        },
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid"
+        }
+      ],
+      "links": [
+        {
+          "from": [
+            "nx",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices X"
+          ]
+        },
+        {
+          "from": [
+            "ny",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices Y"
+          ]
+        }
+      ],
+      "output": [
+        "grid",
+        "Mesh"
+      ]
+    }
+  },
+  {
+    "id": "grid-single-vertex",
+    "description": "Grid with 1 by 1 vertices fed through links",
+    "tree": {
+      "nodes": [
+        {
+          "name": "nx",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 1
+          }
+        },
+        {
+          "name": "ny",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 1
+          }
+        },
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid"
+        }
+      ],
+      "links": [
+        {
+          "from": [
+            "nx",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices X"
+          ]
+        },
+        {
+          "from": [
+            "ny",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices Y"
+          ]
+        }
+      ],
+      "output": [
+        "grid",
+        "Mesh"
+      ]
+    }
+  },
+  {
+    "id": "grid-zero-vertices",
+    "description": "Grid with 0 by 3 vertices fed through links: empty geometry, no mesh component",
+    "tree": {
+      "nodes": [
+        {
+          "name": "nx",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 0
+          }
+        },
+        {
+          "name": "ny",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 3
+          }
+        },
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid"
+        }
+      ],
+      "links": [
+        {
+          "from": [
+            "nx",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices X"
+          ]
+        },
+        {
+          "from": [
+            "ny",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices Y"
+          ]
+        }
+      ],
+      "output": [
+        "grid",
+        "Mesh"
+      ]
+    }
+  },
+  {
+    "id": "grid-large-count",
+    "description": "Grid with 1200 by 2 vertices fed through links: the UI maximum of 1000 does not apply",
+    "tree": {
+      "nodes": [
+        {
+          "name": "nx",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 1200
+          }
+        },
+        {
+          "name": "ny",
+          "type": "FunctionNodeInputInt",
+          "properties": {
+            "integer": 2
+          }
+        },
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid"
+        }
+      ],
+      "links": [
+        {
+          "from": [
+            "nx",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices X"
+          ]
+        },
+        {
+          "from": [
+            "ny",
+            "Integer"
+          ],
+          "to": [
+            "grid",
+            "Vertices Y"
+          ]
+        }
+      ],
+      "output": [
+        "grid",
+        "Mesh"
+      ]
+    }
+  },
+  {
+    "id": "grid-uv-stored",
+    "description": "UV Map output of a 4 by 3 grid of size 2 by 1 stored as a named corner attribute",
+    "tree": {
+      "nodes": [
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid",
+          "inputs": {
+            "Size X": 2,
+            "Size Y": 1,
+            "Vertices X": 4,
+            "Vertices Y": 3
+          }
+        },
+        {
+          "name": "store",
+          "type": "GeometryNodeStoreNamedAttribute",
+          "properties": {
+            "data_type": "FLOAT_VECTOR",
+            "domain": "CORNER"
+          },
+          "inputs": {
+            "Name": "uv"
+          }
+        }
+      ],
+      "links": [
+        {
+          "from": [
+            "grid",
+            "Mesh"
+          ],
+          "to": [
+            "store",
+            "Geometry"
+          ]
+        },
+        {
+          "from": [
+            "grid",
+            "UV Map"
+          ],
+          "to": [
+            "store",
+            "Value"
+          ]
+        }
+      ],
+      "output": [
+        "store",
+        "Geometry"
+      ]
+    }
+  },
+  {
+    "id": "grid-negative-size-uv",
+    "description": "Grid of size -2 by 1 with its UV Map stored: mirrored positions, UVs still start at 0",
+    "tree": {
+      "nodes": [
+        {
+          "name": "size",
+          "type": "ShaderNodeMath",
+          "properties": {
+            "operation": "MULTIPLY"
+          },
+          "inputs": {
+            "Value": -2,
+            "Value_001": 1
+          }
+        },
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid",
+          "inputs": {
+            "Size Y": 1,
+            "Vertices X": 3,
+            "Vertices Y": 2
+          }
+        },
+        {
+          "name": "store",
+          "type": "GeometryNodeStoreNamedAttribute",
+          "properties": {
+            "data_type": "FLOAT_VECTOR",
+            "domain": "CORNER"
+          },
+          "inputs": {
+            "Name": "uv"
+          }
+        }
+      ],
+      "links": [
+        {
+          "from": [
+            "size",
+            "Value"
+          ],
+          "to": [
+            "grid",
+            "Size X"
+          ]
+        },
+        {
+          "from": [
+            "grid",
+            "Mesh"
+          ],
+          "to": [
+            "store",
+            "Geometry"
+          ]
+        },
+        {
+          "from": [
+            "grid",
+            "UV Map"
+          ],
+          "to": [
+            "store",
+            "Value"
+          ]
+        }
+      ],
+      "output": [
+        "store",
+        "Geometry"
+      ]
+    }
+  },
+  {
+    "id": "grid-zero-size",
+    "description": "Grid of size 0 by 1 with 3 by 3 vertices and its UV Map stored",
+    "tree": {
+      "nodes": [
+        {
+          "name": "grid",
+          "type": "GeometryNodeMeshGrid",
+          "inputs": {
+            "Size X": 0,
+            "Size Y": 1
+          }
+        },
+        {
+          "name": "store",
+          "type": "GeometryNodeStoreNamedAttribute",
+          "properties": {
+            "data_type": "FLOAT_VECTOR",
+            "domain": "CORNER"
+          },
+          "inputs": {
+            "Name": "uv"
+          }
+        }
+      ],
+      "links": [
+        {
+          "from": [
+            "grid",
+            "Mesh"
+          ],
+          "to": [
+            "store",
+            "Geometry"
+          ]
+        },
+        {
+          "from": [
+            "grid",
+            "UV Map"
+          ],
+          "to": [
+            "store",
+            "Value"
+          ]
+        }
+      ],
+      "output": [
+        "store",
+        "Geometry"
+      ]
     }
   }
 ]

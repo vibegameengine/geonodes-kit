@@ -59,6 +59,7 @@ function compareMesh(report: Report, path: string, actual: Mesh, expected: Mesh)
   compareValues(report, `${path}.edgeVertices`, actual.edgeVertices, expected.edgeVertices, true)
   compareValues(report, `${path}.faceOffsets`, actual.faceOffsets, expected.faceOffsets, true)
   compareValues(report, `${path}.cornerVertices`, actual.cornerVertices, expected.cornerVertices, true)
+  compareValues(report, `${path}.cornerEdges`, actual.cornerEdges, expected.cornerEdges, true)
   compareAttributes(report, `${path}.attributes`, actual.attributes, expected.attributes)
 }
 
