@@ -21,6 +21,9 @@
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json",
     "inventory": "node tools/runBlender.mjs tools/blender/inventory.py coverage/nodes-5.2.2.json",
-    "coverage": "node tools/coverage.mjs"
+    "coverage": "node tools/coverage.mjs",
+    "assets": "node tools/fetchAssets.mjs",
+    "reference": "node tools/runBlender.mjs tools/blender/reference.py",
+    "usage": "node tools/runBlender.mjs tools/blender/usage.py"
   }
 }
