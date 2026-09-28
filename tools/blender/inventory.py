@@ -34,7 +34,10 @@ def describe_properties(node):
         entry = {"identifier": prop.identifier, "type": prop.type}
         if prop.type == "ENUM":
             entry["items"] = [item.identifier for item in prop.enum_items]
-            entry["default"] = prop.default
+            value = getattr(node, prop.identifier)
+            entry["default"] = sorted(value) if isinstance(value, set) else value
+        elif prop.type in {"BOOLEAN", "INT", "FLOAT", "STRING"} and getattr(prop, "array_length", 0) == 0:
+            entry["default"] = getattr(node, prop.identifier)
         properties.append(entry)
     return properties
 

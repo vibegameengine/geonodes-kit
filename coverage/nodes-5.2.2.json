@@ -121,7 +121,7 @@
       "Y",
       "Z"
      ],
-     "default": "X"
+     "default": "Z"
     },
     {
      "identifier": "pivot_axis",
@@ -182,7 +182,7 @@
       "Y",
       "Z"
      ],
-     "default": "X"
+     "default": "Z"
     },
     {
      "identifier": "secondary_axis",
@@ -572,7 +572,7 @@
       "BRIGHTER",
       "DARKER"
      ],
-     "default": "EQUAL"
+     "default": "GREATER_THAN"
     },
     {
      "identifier": "data_type",
@@ -752,7 +752,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     }
    ]
   },
@@ -830,7 +831,8 @@
    "properties": [
     {
      "identifier": "boolean",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -873,7 +875,8 @@
    "properties": [
     {
      "identifier": "integer",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     }
    ]
   },
@@ -900,7 +903,8 @@
     },
     {
      "identifier": "vector_dimensions",
-     "type": "INT"
+     "type": "INT",
+     "default": 3
     }
    ]
   },
@@ -983,7 +987,8 @@
    "properties": [
     {
      "identifier": "string",
-     "type": "STRING"
+     "type": "STRING",
+     "default": ""
     },
     {
      "identifier": "textbox_state",
@@ -1014,7 +1019,8 @@
     },
     {
      "identifier": "vector_dimensions",
-     "type": "INT"
+     "type": "INT",
+     "default": 3
     }
    ]
   },
@@ -2517,7 +2523,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_item",
@@ -2819,7 +2826,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_item",
@@ -2873,7 +2881,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_item",
@@ -3418,7 +3427,7 @@
       "VECTOR",
       "ALIGN"
      ],
-     "default": "FREE"
+     "default": "AUTO"
     },
     {
      "identifier": "mode",
@@ -3427,7 +3436,10 @@
       "LEFT",
       "RIGHT"
      ],
-     "default": ""
+     "default": [
+      "LEFT",
+      "RIGHT"
+     ]
     }
    ]
   },
@@ -3884,7 +3896,7 @@
       "VECTOR",
       "ALIGN"
      ],
-     "default": "FREE"
+     "default": "AUTO"
     },
     {
      "identifier": "mode",
@@ -3893,7 +3905,10 @@
       "LEFT",
       "RIGHT"
      ],
-     "default": ""
+     "default": [
+      "LEFT",
+      "RIGHT"
+     ]
     }
    ]
   },
@@ -4451,7 +4466,8 @@
     },
     {
      "identifier": "use_legacy_normal",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -5048,7 +5064,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_item",
@@ -5119,7 +5136,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_item",
@@ -5474,15 +5492,18 @@
     },
     {
      "identifier": "active_input_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_generation_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_main_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "domain",
@@ -5500,7 +5521,8 @@
     },
     {
      "identifier": "inspection_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     }
    ]
   },
@@ -5891,39 +5913,48 @@
    "properties": [
     {
      "identifier": "use_translation_x",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "use_translation_y",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "use_translation_z",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "use_rotation_x",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "use_rotation_y",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "use_rotation_z",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "use_scale_x",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "use_scale_y",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "use_scale_z",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     }
    ]
   },
@@ -7103,7 +7134,7 @@
       "SOUND",
       "INT_VECTOR"
      ],
-     "default": "GEOMETRY"
+     "default": "FLOAT"
     }
    ]
   },
@@ -7655,7 +7686,8 @@
    "properties": [
     {
      "identifier": "legacy_corner_normals",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -8228,7 +8260,7 @@
       "SOUND",
       "INT_VECTOR"
      ],
-     "default": "GEOMETRY"
+     "default": "FLOAT"
     }
    ]
   },
@@ -8309,7 +8341,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 1
     },
     {
      "identifier": "active_item",
@@ -8636,7 +8669,7 @@
       "UNION",
       "DIFFERENCE"
      ],
-     "default": "INTERSECT"
+     "default": "DIFFERENCE"
     },
     {
      "identifier": "solver",
@@ -9922,7 +9955,8 @@
    "properties": [
     {
      "identifier": "realize_to_point_domain",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -10080,7 +10114,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_item",
@@ -10088,7 +10123,8 @@
     },
     {
      "identifier": "inspection_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     }
    ]
   },
@@ -10171,7 +10207,8 @@
    "properties": [
     {
      "identifier": "keep_last_segment",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     }
    ]
   },
@@ -10552,7 +10589,8 @@
     },
     {
      "identifier": "use_all_curves",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     },
     {
      "identifier": "data_type",
@@ -10786,7 +10824,8 @@
     },
     {
      "identifier": "clamp",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -12127,7 +12166,7 @@
       "EDGE",
       "FACE"
      ],
-     "default": "EDGE"
+     "default": "FACE"
     }
    ]
   },
@@ -12260,7 +12299,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_item",
@@ -12964,7 +13004,7 @@
       "SOUND",
       "INT_VECTOR"
      ],
-     "default": "GEOMETRY"
+     "default": "FLOAT"
     }
    ]
   },
@@ -13739,7 +13779,8 @@
    "properties": [
     {
      "identifier": "ui_shortcut",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "viewer_items",
@@ -13747,7 +13788,8 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_item",
@@ -13766,7 +13808,7 @@
       "INSTANCE",
       "LAYER"
      ],
-     "default": "POINT"
+     "default": "AUTO"
     }
    ]
   },
@@ -14068,15 +14110,18 @@
     },
     {
      "identifier": "active_input_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_output_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "define_signature",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -14106,11 +14151,13 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "define_signature",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -14209,15 +14256,18 @@
     },
     {
      "identifier": "active_input_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "active_output_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "define_signature",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -14233,11 +14283,13 @@
     },
     {
      "identifier": "shrink",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "label_size",
-     "type": "INT"
+     "type": "INT",
+     "default": 20
     }
    ]
   },
@@ -14405,7 +14457,8 @@
    "properties": [
     {
      "identifier": "is_active_output",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     }
    ]
   },
@@ -14441,7 +14494,8 @@
    "properties": [
     {
      "identifier": "socket_idname",
-     "type": "STRING"
+     "type": "STRING",
+     "default": "NodeSocketColor"
     },
     {
      "identifier": "data_type",
@@ -14472,7 +14526,7 @@
       "SOUND",
       "INT_VECTOR"
      ],
-     "default": "FLOAT"
+     "default": "RGBA"
     }
    ]
   },
@@ -14529,7 +14583,8 @@
    "properties": [
     {
      "identifier": "socket_idname",
-     "type": "STRING"
+     "type": "STRING",
+     "default": "NodeSocketColor"
     }
    ]
   },
@@ -14559,11 +14614,13 @@
     },
     {
      "identifier": "active_index",
-     "type": "INT"
+     "type": "INT",
+     "default": 0
     },
     {
      "identifier": "define_signature",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -14942,7 +14999,8 @@
    "properties": [
     {
      "identifier": "clamp",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "interpolation_type",
@@ -15048,7 +15106,8 @@
     },
     {
      "identifier": "use_clamp",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -15235,11 +15294,13 @@
     },
     {
      "identifier": "clamp_factor",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     },
     {
      "identifier": "clamp_result",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -15318,11 +15379,13 @@
     },
     {
      "identifier": "use_alpha",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     },
     {
      "identifier": "use_clamp",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -15427,7 +15490,8 @@
    "properties": [
     {
      "identifier": "normalize",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -15582,19 +15646,23 @@
     },
     {
      "identifier": "offset_frequency",
-     "type": "INT"
+     "type": "INT",
+     "default": 2
     },
     {
      "identifier": "squash_frequency",
-     "type": "INT"
+     "type": "INT",
+     "default": 2
     },
     {
      "identifier": "offset",
-     "type": "FLOAT"
+     "type": "FLOAT",
+     "default": 0.5
     },
     {
      "identifier": "squash",
-     "type": "FLOAT"
+     "type": "FLOAT",
+     "default": 1.0
     }
    ]
   },
@@ -15876,7 +15944,8 @@
     },
     {
      "identifier": "turbulence_depth",
-     "type": "INT"
+     "type": "INT",
+     "default": 2
     }
    ]
   },
@@ -15980,7 +16049,7 @@
       "3D",
       "4D"
      ],
-     "default": "1D"
+     "default": "3D"
     },
     {
      "identifier": "noise_type",
@@ -15992,11 +16061,12 @@
       "FBM",
       "HETERO_TERRAIN"
      ],
-     "default": "MULTIFRACTAL"
+     "default": "FBM"
     },
     {
      "identifier": "normalize",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": true
     }
    ]
   },
@@ -16122,7 +16192,7 @@
       "3D",
       "4D"
      ],
-     "default": "1D"
+     "default": "3D"
     },
     {
      "identifier": "distance",
@@ -16149,7 +16219,8 @@
     },
     {
      "identifier": "normalize",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   },
@@ -16325,7 +16396,7 @@
       "3D",
       "4D"
      ],
-     "default": "1D"
+     "default": "3D"
     }
    ]
   },
@@ -16597,7 +16668,8 @@
     },
     {
      "identifier": "invert",
-     "type": "BOOLEAN"
+     "type": "BOOLEAN",
+     "default": false
     }
    ]
   }
