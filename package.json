@@ -1,8 +1,8 @@
 {
   "name": "@vibegameengine/geonodes-kit",
   "version": "0.1.0",
-  "description": "Blender Geometry Nodes, evaluated in JavaScript: open a .blend, run its node trees, get the same geometry Blender gets \u00e2\u20ac\u201d verified against Blender itself.",
-  "license": "GPL-3.0-or-later",
+  "description": "Blender Geometry Nodes, evaluated in JavaScript: open a .blend, run its node trees, get the geometry Blender gets. An independent implementation, checked against Blender as a black box.",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vibegameengine/geonodes-kit.git"
