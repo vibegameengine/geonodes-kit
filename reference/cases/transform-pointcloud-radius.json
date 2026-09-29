@@ -1,48 +1,32 @@
 {
  "blender": "5.2.2 LTS",
  "case": {
-  "id": "compare-color-luma-r-hi",
-  "description": "Red is not brighter than grey 0.2128",
+  "id": "transform-pointcloud-radius",
+  "description": "Point cloud scaled by 3: positions scale, radius stays 0.1",
   "tree": {
    "nodes": [
     {
      "name": "pts",
      "type": "GeometryNodePoints",
      "inputs": {
-      "Count": 1
-     }
-    },
-    {
-     "name": "c",
-     "type": "FunctionNodeCompare",
-     "properties": {
-      "data_type": "RGBA",
-      "operation": "BRIGHTER"
-     },
-     "inputs": {
-      "A": [
+      "Count": 1,
+      "Position": [
        1,
        0,
-       0,
-       1
+       0
       ],
-      "B": [
-       0.2128,
-       0.2128,
-       0.2128,
-       1
-      ]
+      "Radius": 0.1
      }
     },
     {
-     "name": "store",
-     "type": "GeometryNodeStoreNamedAttribute",
-     "properties": {
-      "data_type": "BOOLEAN",
-      "domain": "POINT"
-     },
+     "name": "move",
+     "type": "GeometryNodeTransform",
      "inputs": {
-      "Name": "r"
+      "Scale": [
+       3,
+       3,
+       3
+      ]
      }
     }
    ],
@@ -53,27 +37,17 @@
       "Geometry"
      ],
      "to": [
-      "store",
+      "move",
       "Geometry"
-     ]
-    },
-    {
-     "from": [
-      "c",
-      "Result"
-     ],
-     "to": [
-      "store",
-      "Value"
      ]
     }
    ],
    "output": [
-    "store",
+    "move",
     "Geometry"
    ]
   },
-  "spec": "docs/spec/nodes/math/FunctionNodeCompare.md"
+  "spec": "docs/spec/nodes/instances/GeometryNodeTransform.md"
  },
  "geometry": {
   "mesh": {
@@ -117,7 +91,7 @@
      "domain": "POINT",
      "type": "FLOAT_VECTOR",
      "values": [
-      0.0,
+      3.0,
       0.0,
       0.0
      ]
@@ -128,14 +102,6 @@
      "type": "FLOAT",
      "values": [
       0.10000000149011612
-     ]
-    },
-    {
-     "name": "r",
-     "domain": "POINT",
-     "type": "BOOLEAN",
-     "values": [
-      0
      ]
     }
    ]

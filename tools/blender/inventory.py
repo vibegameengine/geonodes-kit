@@ -17,12 +17,19 @@ def socket_default(socket):
 
 
 def describe_socket(socket):
-    return {
+    entry = {
         "identifier": socket.identifier,
         "name": socket.name,
         "type": socket.bl_idname,
         "default": socket_default(socket),
     }
+    if getattr(socket, "is_multi_input", False):
+        entry["multiInput"] = True
+    if getattr(socket, "hide_value", False):
+        entry["hideValue"] = True
+    if not socket.enabled:
+        entry["disabledByDefault"] = True
+    return entry
 
 
 def describe_properties(node):

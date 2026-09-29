@@ -2,7 +2,7 @@
  "blender": "5.2.2 LTS",
  "case": {
   "id": "compare-color-luma-g-hi",
-  "description": "Green luminance is below 0.7153",
+  "description": "Green is not brighter than grey 0.7153",
   "tree": {
    "nodes": [
     {

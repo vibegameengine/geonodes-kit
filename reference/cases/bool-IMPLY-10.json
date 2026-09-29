@@ -1,8 +1,8 @@
 {
  "blender": "5.2.2 LTS",
  "case": {
-  "id": "compare-color-luma-r-lo",
-  "description": "Red luminance is above 0.2126",
+  "id": "bool-IMPLY-10",
+  "description": "Boolean Math IMPLY with A true, B false",
   "tree": {
    "nodes": [
     {
@@ -13,25 +13,14 @@
      }
     },
     {
-     "name": "c",
-     "type": "FunctionNodeCompare",
+     "name": "b",
+     "type": "FunctionNodeBooleanMath",
      "properties": {
-      "data_type": "RGBA",
-      "operation": "BRIGHTER"
+      "operation": "IMPLY"
      },
      "inputs": {
-      "A": [
-       1,
-       0,
-       0,
-       1
-      ],
-      "B": [
-       0.2126,
-       0.2126,
-       0.2126,
-       1
-      ]
+      "Boolean": true,
+      "Boolean_001": false
      }
     },
     {
@@ -59,8 +48,8 @@
     },
     {
      "from": [
-      "c",
-      "Result"
+      "b",
+      "Boolean"
      ],
      "to": [
       "store",
@@ -73,7 +62,7 @@
     "Geometry"
    ]
   },
-  "spec": "docs/spec/nodes/math/FunctionNodeCompare.md"
+  "spec": "docs/spec/nodes/math/FunctionNodeBooleanMath.md"
  },
  "geometry": {
   "mesh": {

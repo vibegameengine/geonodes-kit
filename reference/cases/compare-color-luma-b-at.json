@@ -1,8 +1,8 @@
 {
  "blender": "5.2.2 LTS",
  "case": {
-  "id": "compare-color-luma-b-lo",
-  "description": "Blue luminance is below 0.0722",
+  "id": "compare-color-luma-b-at",
+  "description": "Blue is not darker than grey 0.0722: Kb is 0.0722",
   "tree": {
    "nodes": [
     {

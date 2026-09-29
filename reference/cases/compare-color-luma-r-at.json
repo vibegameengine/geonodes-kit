@@ -1,8 +1,8 @@
 {
  "blender": "5.2.2 LTS",
  "case": {
-  "id": "compare-color-luma-r-hi",
-  "description": "Red is not brighter than grey 0.2128",
+  "id": "compare-color-luma-r-at",
+  "description": "Red is not brighter than grey 0.2126: Kr is 0.2126",
   "tree": {
    "nodes": [
     {
@@ -27,9 +27,9 @@
        1
       ],
       "B": [
-       0.2128,
-       0.2128,
-       0.2128,
+       0.2126,
+       0.2126,
+       0.2126,
        1
       ]
      }

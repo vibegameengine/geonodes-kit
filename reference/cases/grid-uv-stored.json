@@ -53,7 +53,8 @@
     "store",
     "Geometry"
    ]
-  }
+  },
+  "spec": "docs/spec/nodes/mesh/GeometryNodeMeshGrid.md"
  },
  "geometry": {
   "mesh": {

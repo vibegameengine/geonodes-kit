@@ -191,21 +191,21 @@
      ]
     },
     {
-     "name": "resolution",
-     "domain": "CURVE",
-     "type": "INT",
-     "values": [
-      3,
-      12
-     ]
-    },
-    {
      "name": "cyclic",
      "domain": "CURVE",
      "type": "BOOLEAN",
      "values": [
       0,
       1
+     ]
+    },
+    {
+     "name": "resolution",
+     "domain": "CURVE",
+     "type": "INT",
+     "values": [
+      3,
+      12
      ]
     },
     {

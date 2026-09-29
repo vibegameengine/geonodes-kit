@@ -14,7 +14,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Factor",
@@ -81,7 +82,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Factor",
@@ -251,7 +253,8 @@
      "identifier": "Shift",
      "name": "Shift",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -1044,7 +1047,8 @@
      "identifier": "Value_002",
      "name": "Value",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -1355,7 +1359,8 @@
      "identifier": "ID",
      "name": "ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Seed",
@@ -1462,7 +1467,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Rotate By",
@@ -2036,7 +2042,8 @@
      "identifier": "Base",
      "name": "Base",
      "type": "NodeSocketInt",
-     "default": 10
+     "default": 10,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -2221,13 +2228,15 @@
      "identifier": "Base",
      "name": "Base",
      "type": "NodeSocketInt",
-     "default": 10
+     "default": 10,
+     "disabledByDefault": true
     },
     {
      "identifier": "Padding",
      "name": "Padding",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -2264,7 +2273,8 @@
      "identifier": "Group Index",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -2355,19 +2365,22 @@
      "identifier": "Spline Count",
      "name": "Spline Count",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Instance Count",
      "name": "Instance Count",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Layer Count",
      "name": "Layer Count",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "disabledByDefault": true
     }
    ],
    "properties": [
@@ -2400,13 +2413,15 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Attribute",
      "name": "Attribute",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -2540,7 +2555,8 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Iterations",
@@ -2790,7 +2806,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "__extend__",
@@ -2898,7 +2915,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -2908,7 +2926,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Distance",
@@ -2935,13 +2954,15 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -2951,7 +2972,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Distance",
@@ -3075,13 +3097,15 @@
      "identifier": "Edge Index",
      "name": "Edge Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Weights",
      "name": "Weights",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Sort Index",
@@ -3114,13 +3138,15 @@
      "identifier": "Face Index",
      "name": "Face Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Weights",
      "name": "Weights",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Sort Index",
@@ -3153,13 +3179,15 @@
      "identifier": "Vertex Index",
      "name": "Vertex Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Weights",
      "name": "Weights",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Sort Index",
@@ -3273,7 +3301,8 @@
       -1.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Middle",
@@ -3283,7 +3312,8 @@
       0.0,
       2.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "End",
@@ -3293,7 +3323,8 @@
       1.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Radius",
@@ -3317,7 +3348,8 @@
      "identifier": "Offset Angle",
      "name": "Offset Angle",
      "type": "NodeSocketFloatAngle",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Connect Center",
@@ -3347,7 +3379,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Normal",
@@ -3357,13 +3390,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Radius",
      "name": "Radius",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     }
    ],
    "properties": [
@@ -3472,7 +3507,8 @@
      "identifier": "Point Index",
      "name": "Point Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -3580,7 +3616,8 @@
       -1.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Point 2",
@@ -3590,7 +3627,8 @@
       0.0,
       1.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Point 3",
@@ -3600,7 +3638,8 @@
       1.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Radius",
@@ -3624,7 +3663,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     }
    ],
    "properties": [
@@ -3671,13 +3711,15 @@
       0.0,
       0.0,
       1.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Length",
      "name": "Length",
      "type": "NodeSocketFloatDistance",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -3720,31 +3762,36 @@
      "identifier": "Bottom Width",
      "name": "Bottom Width",
      "type": "NodeSocketFloatDistance",
-     "default": 4.0
+     "default": 4.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Top Width",
      "name": "Top Width",
      "type": "NodeSocketFloatDistance",
-     "default": 2.0
+     "default": 2.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Offset",
      "name": "Offset",
      "type": "NodeSocketFloatDistance",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Bottom Height",
      "name": "Bottom Height",
      "type": "NodeSocketFloatDistance",
-     "default": 3.0
+     "default": 3.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Top Height",
      "name": "Top Height",
      "type": "NodeSocketFloatDistance",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Point 1",
@@ -3754,7 +3801,8 @@
       -1.0,
       -1.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Point 2",
@@ -3764,7 +3812,8 @@
       1.0,
       -1.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Point 3",
@@ -3774,7 +3823,8 @@
       1.0,
       1.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Point 4",
@@ -3784,7 +3834,8 @@
       -1.0,
       1.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -3875,7 +3926,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -3977,7 +4029,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -4106,7 +4159,8 @@
      "identifier": "Length",
      "name": "Length",
      "type": "NodeSocketFloatDistance",
-     "default": 0.10000000149011612
+     "default": 0.10000000149011612,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -4174,7 +4228,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Instances as Layers",
@@ -4228,7 +4283,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -4273,7 +4329,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Density",
@@ -4295,13 +4352,15 @@
       0.30000001192092896,
       0.30000001192092896,
       0.30000001192092896
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Threshold",
      "name": "Threshold",
      "type": "NodeSocketFloat",
-     "default": 0.10000000149011612
+     "default": 0.10000000149011612,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -4393,19 +4452,22 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Distance Min",
      "name": "Distance Min",
      "type": "NodeSocketFloatDistance",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Density Max",
      "name": "Density Max",
      "type": "NodeSocketFloat",
-     "default": 10.0
+     "default": 10.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Density",
@@ -4417,7 +4479,8 @@
      "identifier": "Density Factor",
      "name": "Density Factor",
      "type": "NodeSocketFloatFactor",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Seed",
@@ -4512,7 +4575,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Amount",
@@ -4565,13 +4629,15 @@
      "identifier": "Start Vertices",
      "name": "Start Vertices",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Next Vertex Index",
      "name": "Next Vertex Index",
      "type": "NodeSocketInt",
-     "default": -1
+     "default": -1,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -4592,13 +4658,15 @@
      "identifier": "Start Vertices",
      "name": "Start Vertices",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Next Vertex Index",
      "name": "Next Vertex Index",
      "type": "NodeSocketInt",
-     "default": -1
+     "default": -1,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -4619,7 +4687,8 @@
      "identifier": "Corner Index",
      "name": "Corner Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -4646,13 +4715,15 @@
      "identifier": "Vertex Index",
      "name": "Vertex Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Weights",
      "name": "Weights",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Sort Index",
@@ -4685,7 +4756,8 @@
      "identifier": "Boundary Edges",
      "name": "Boundary Edges",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -4712,7 +4784,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Offset",
@@ -4722,7 +4795,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Offset Scale",
@@ -4778,7 +4852,8 @@
      "identifier": "Corner Index",
      "name": "Corner Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -4805,7 +4880,8 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Index",
@@ -4874,7 +4950,8 @@
      "identifier": "Group Index",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -4931,7 +5008,8 @@
      "identifier": "Group Index",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -5159,7 +5237,8 @@
      "identifier": "Group Index",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -5216,7 +5295,8 @@
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Mode",
@@ -5294,13 +5374,15 @@
      "identifier": "List",
      "name": "List",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -5365,7 +5447,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -5392,7 +5475,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "__extend__",
@@ -5412,7 +5496,8 @@
      "identifier": "Element",
      "name": "Element",
      "type": "NodeSocketGeometry",
-     "default": null
+     "default": null,
+     "disabledByDefault": true
     },
     {
      "identifier": "__extend__",
@@ -5534,7 +5619,8 @@
      "identifier": "Geometry",
      "name": "Geometry",
      "type": "NodeSocketGeometry",
-     "default": null
+     "default": null,
+     "multiInput": true
     }
    ],
    "outputs": [
@@ -5749,7 +5835,9 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "multiInput": true,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -5815,7 +5903,9 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "multiInput": true,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -5879,7 +5969,8 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketMatrix",
-     "default": null
+     "default": null,
+     "multiInput": true
     },
     {
      "identifier": "Position",
@@ -5972,7 +6063,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Layers as Instances",
@@ -5999,7 +6091,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Velocity",
@@ -6009,7 +6102,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Time Step",
@@ -6080,7 +6174,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Min X",
@@ -6173,7 +6268,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -6198,7 +6294,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Connectivity",
@@ -6273,7 +6370,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -6294,7 +6392,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -6319,7 +6418,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -6378,7 +6478,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -6399,7 +6500,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Width",
@@ -6464,7 +6566,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Width",
@@ -6529,7 +6632,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Mode",
@@ -6594,7 +6698,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Threshold",
@@ -6627,7 +6732,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -6716,7 +6822,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -6842,7 +6949,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Frame",
@@ -7038,13 +7146,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -7784,13 +7894,15 @@
      "identifier": "End Vertex",
      "name": "End Vertex",
      "type": "NodeSocketBool",
-     "default": false
+     "default": false,
+     "hideValue": true
     },
     {
      "identifier": "Edge Cost",
      "name": "Edge Cost",
      "type": "NodeSocketFloat",
-     "default": 1.0
+     "default": 1.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -7919,7 +8031,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Instance",
@@ -7937,7 +8050,8 @@
      "identifier": "Instance Index",
      "name": "Instance Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Rotation",
@@ -7998,7 +8112,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -8008,7 +8123,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Radius",
@@ -8045,13 +8161,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Guide Group ID",
      "name": "Guide Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Points",
@@ -8067,13 +8185,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Point Group ID",
      "name": "Point Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Max Neighbors",
@@ -8126,7 +8246,8 @@
      "identifier": "Geometry",
      "name": "Geometry",
      "type": "NodeSocketGeometry",
-     "default": null
+     "default": null,
+     "multiInput": true
     }
    ],
    "outputs": [
@@ -8147,7 +8268,8 @@
      "identifier": "List",
      "name": "List",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Index",
@@ -8219,7 +8341,8 @@
      "identifier": "List",
      "name": "List",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -8399,7 +8522,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Mode",
@@ -8438,13 +8562,16 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -8481,13 +8608,15 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Merge ID",
      "name": "Merge ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -8514,7 +8643,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Affect Kind",
@@ -8631,19 +8761,22 @@
      "identifier": "Mesh 2",
      "name": "Mesh 2",
      "type": "NodeSocketGeometry",
-     "default": null
+     "default": null,
+     "multiInput": true
     },
     {
      "identifier": "Self Intersection",
      "name": "Self Intersection",
      "type": "NodeSocketBool",
-     "default": false
+     "default": false,
+     "disabledByDefault": true
     },
     {
      "identifier": "Hole Tolerant",
      "name": "Hole Tolerant",
      "type": "NodeSocketBool",
-     "default": false
+     "default": false,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -8657,7 +8790,8 @@
      "identifier": "Intersecting Edges",
      "name": "Intersecting Edges",
      "type": "NodeSocketBool",
-     "default": false
+     "default": false,
+     "disabledByDefault": true
     }
    ],
    "properties": [
@@ -8956,7 +9090,8 @@
      "identifier": "Face Set",
      "name": "Face Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -9069,7 +9204,8 @@
      "identifier": "Resolution",
      "name": "Resolution",
      "type": "NodeSocketFloatDistance",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Start Location",
@@ -9135,7 +9271,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -9211,7 +9348,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -9221,7 +9359,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Radius",
@@ -9460,7 +9599,8 @@
      "identifier": "Corner Index",
      "name": "Corner Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Offset",
@@ -9487,7 +9627,8 @@
      "identifier": "Point Index",
      "name": "Point Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Offset",
@@ -9557,13 +9698,15 @@
      "identifier": "Curve Index",
      "name": "Curve Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Weights",
      "name": "Weights",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Sort Index",
@@ -9602,13 +9745,15 @@
      "identifier": "Curve Group ID",
      "name": "Curve Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Weight",
      "name": "Weight",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -9668,7 +9813,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -9746,7 +9892,8 @@
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Source Position",
@@ -9756,13 +9903,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Sample Group ID",
      "name": "Sample Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -9816,7 +9965,8 @@
      "identifier": "Attribute",
      "name": "Attribute",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Interpolation",
@@ -9832,7 +9982,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Ray Direction",
@@ -9929,7 +10080,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Realize All",
@@ -10175,7 +10327,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Mode",
@@ -10226,7 +10379,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -10253,7 +10407,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Rotation",
@@ -10300,13 +10455,16 @@
      "identifier": "Grid 1",
      "name": "Grid 1",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Grid 2",
      "name": "Grid 2",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "multiInput": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -10314,7 +10472,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "properties": [
@@ -10338,7 +10497,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Iterations",
@@ -10365,7 +10525,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Iterations",
@@ -10392,7 +10553,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Width",
@@ -10425,7 +10587,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Iterations",
@@ -10452,7 +10615,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Width",
@@ -10485,7 +10649,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Distance",
@@ -10518,7 +10683,8 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Factor",
@@ -10530,7 +10696,8 @@
      "identifier": "Length",
      "name": "Length",
      "type": "NodeSocketFloatDistance",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Curve Index",
@@ -10623,7 +10790,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -10633,7 +10801,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Interpolation",
@@ -10692,7 +10861,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "X",
@@ -10769,7 +10939,8 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Index",
@@ -10847,7 +11018,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -10886,13 +11058,15 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Sample Position",
@@ -10902,13 +11076,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Sample Group ID",
      "name": "Sample Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -11026,7 +11202,8 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Source UV Map",
@@ -11036,7 +11213,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Sample UV",
@@ -11101,7 +11279,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Scale",
@@ -11117,7 +11296,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Scale Mode",
@@ -11170,7 +11350,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Scale",
@@ -11288,7 +11469,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -11335,7 +11517,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -11345,7 +11528,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Offset",
@@ -11392,7 +11576,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Mode",
@@ -11435,7 +11620,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Radius",
@@ -11468,7 +11654,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Tilt",
@@ -11555,7 +11742,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Color",
@@ -11640,7 +11828,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Softness",
@@ -11667,7 +11856,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Background",
@@ -11732,7 +11922,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Transform",
@@ -11803,13 +11994,15 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "ID",
      "name": "ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -11836,13 +12029,15 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Transform",
      "name": "Transform",
      "type": "NodeSocketMatrix",
-     "default": null
+     "default": null,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -11869,7 +12064,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Material",
@@ -11902,7 +12098,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Material Index",
@@ -11995,7 +12192,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Order",
@@ -12028,7 +12226,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Weight",
@@ -12061,7 +12260,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Radius",
@@ -12094,7 +12294,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Position",
@@ -12104,7 +12305,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Offset",
@@ -12141,7 +12343,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Shade Smooth",
@@ -12184,7 +12387,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Cyclic",
@@ -12217,7 +12421,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Resolution",
@@ -12263,7 +12468,8 @@
      "identifier": "Skip",
      "name": "Skip",
      "type": "NodeSocketBool",
-     "default": false
+     "default": false,
+     "hideValue": true
     },
     {
      "identifier": "Item_0",
@@ -12322,19 +12528,22 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Sort Weight",
      "name": "Sort Weight",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -12368,25 +12577,29 @@
      "identifier": "List",
      "name": "List",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     },
     {
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Sort Weight",
      "name": "Sort Weight",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -12491,7 +12704,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -12518,13 +12732,15 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Group ID",
      "name": "Group ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -12571,7 +12787,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Name",
@@ -12652,7 +12869,8 @@
      "identifier": "Grid",
      "name": "Grid",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -12698,7 +12916,9 @@
      "identifier": "Strings",
      "name": "Strings",
      "type": "NodeSocketString",
-     "default": ""
+     "default": "",
+     "multiInput": true,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -13181,13 +13401,15 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Face Set",
      "name": "Face Set",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -13262,37 +13484,43 @@
      "identifier": "Target Point ID",
      "name": "Target Point ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Target Edge ID",
      "name": "Target Edge ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Target Face ID",
      "name": "Target Face ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Target Corner ID",
      "name": "Target Corner ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Target Curve ID",
      "name": "Target Curve ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Target Instance ID",
      "name": "Target Instance ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Source",
@@ -13304,37 +13532,43 @@
      "identifier": "Source Point ID",
      "name": "Source Point ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Source Edge ID",
      "name": "Source Edge ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Source Face ID",
      "name": "Source Face ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Source Corner ID",
      "name": "Source Corner ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Source Curve ID",
      "name": "Source Curve ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Source Instance ID",
      "name": "Source Instance ID",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     },
     {
      "identifier": "Pattern Mode",
@@ -13448,7 +13682,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Translation",
@@ -13491,7 +13726,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Quad Method",
@@ -13530,7 +13766,8 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Start",
@@ -13548,13 +13785,15 @@
      "identifier": "Start_001",
      "name": "Start",
      "type": "NodeSocketFloatDistance",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "End_001",
      "name": "End",
      "type": "NodeSocketFloatDistance",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -13589,13 +13828,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Margin",
@@ -13690,13 +13931,15 @@
      "identifier": "Selection",
      "name": "Selection",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Seam",
      "name": "Seam",
      "type": "NodeSocketBool",
-     "default": false
+     "default": false,
+     "hideValue": true
     },
     {
      "identifier": "Margin",
@@ -13751,7 +13994,8 @@
      "identifier": "Corner Index",
      "name": "Corner Index",
      "type": "NodeSocketInt",
-     "default": 0
+     "default": 0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -13962,7 +14206,8 @@
      "identifier": "Show",
      "name": "Show",
      "type": "NodeSocketBool",
-     "default": true
+     "default": true,
+     "hideValue": true
     },
     {
      "identifier": "Message",
@@ -14175,7 +14420,8 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -14538,7 +14784,8 @@
      "identifier": "Bundle",
      "name": "Bundle",
      "type": "NodeSocketBundle",
-     "default": null
+     "default": null,
+     "multiInput": true
     }
    ],
    "outputs": [
@@ -14853,7 +15100,8 @@
       1.0,
       1.0,
       1.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Gamma",
@@ -14915,7 +15163,8 @@
      "identifier": "Steps",
      "name": "Steps",
      "type": "NodeSocketFloat",
-     "default": 4.0
+     "default": 4.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Vector",
@@ -14925,7 +15174,9 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true,
+     "disabledByDefault": true
     },
     {
      "identifier": "From_Min_FLOAT3",
@@ -14935,7 +15186,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "From_Max_FLOAT3",
@@ -14945,7 +15197,8 @@
       1.0,
       1.0,
       1.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "To_Min_FLOAT3",
@@ -14955,7 +15208,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "To_Max_FLOAT3",
@@ -14965,7 +15219,8 @@
       1.0,
       1.0,
       1.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Steps_FLOAT3",
@@ -14975,7 +15230,8 @@
       4.0,
       4.0,
       4.0
-     ]
+     ],
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -14993,7 +15249,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     }
    ],
    "properties": [
@@ -15044,7 +15301,8 @@
      "identifier": "Value_002",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.5
+     "default": 0.5,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -15129,7 +15387,8 @@
       0.5,
       0.5,
       0.5
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "A_Float",
@@ -15151,7 +15410,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "B_Vector",
@@ -15161,7 +15421,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "A_Color",
@@ -15172,7 +15433,8 @@
       0.5,
       0.5,
       1.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "B_Color",
@@ -15183,7 +15445,8 @@
       0.5,
       0.5,
       1.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "A_Rotation",
@@ -15193,7 +15456,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "B_Rotation",
@@ -15203,7 +15467,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -15221,7 +15486,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Result_Color",
@@ -15232,7 +15498,8 @@
       0.800000011920929,
       0.800000011920929,
       1.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Result_Rotation",
@@ -15242,7 +15509,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     }
    ],
    "properties": [
@@ -15544,7 +15812,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Color1",
@@ -15678,7 +15947,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Color1",
@@ -15751,7 +16021,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Scale",
@@ -15785,7 +16056,8 @@
       1.4142135381698608,
       1.4142135381698608,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -15840,7 +16112,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     }
    ],
    "outputs": [
@@ -15899,7 +16172,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Scale",
@@ -15961,13 +16235,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "W",
      "name": "W",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Scale",
@@ -15997,13 +16273,15 @@
      "identifier": "Offset",
      "name": "Offset",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Gain",
      "name": "Gain",
      "type": "NodeSocketFloat",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Distortion",
@@ -16082,13 +16360,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "W",
      "name": "W",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Scale",
@@ -16118,13 +16398,15 @@
      "identifier": "Smoothness",
      "name": "Smoothness",
      "type": "NodeSocketFloatFactor",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Exponent",
      "name": "Exponent",
      "type": "NodeSocketFloat",
-     "default": 0.5
+     "default": 0.5,
+     "disabledByDefault": true
     },
     {
      "identifier": "Randomness",
@@ -16165,13 +16447,15 @@
      "identifier": "W",
      "name": "W",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     },
     {
      "identifier": "Radius",
      "name": "Radius",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     }
    ],
    "properties": [
@@ -16236,7 +16520,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Scale",
@@ -16358,13 +16643,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "W",
      "name": "W",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -16523,13 +16810,15 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     },
     {
      "identifier": "Scale",
      "name": "Scale",
      "type": "NodeSocketFloat",
-     "default": 1.0
+     "default": 1.0,
+     "disabledByDefault": true
     }
    ],
    "outputs": [
@@ -16547,7 +16836,8 @@
      "identifier": "Value",
      "name": "Value",
      "type": "NodeSocketFloat",
-     "default": 0.0
+     "default": 0.0,
+     "disabledByDefault": true
     }
    ],
    "properties": [
@@ -16602,7 +16892,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "hideValue": true
     },
     {
      "identifier": "Center",
@@ -16638,7 +16929,8 @@
       0.0,
       0.0,
       0.0
-     ]
+     ],
+     "disabledByDefault": true
     }
    ],
    "outputs": [
