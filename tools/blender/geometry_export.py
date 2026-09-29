@@ -58,6 +58,8 @@ def read_mesh(mesh):
 
 
 def read_reference(reference, depth):
+    if reference is None:
+        return {"kind": "geometry", "geometry": {}}
     if isinstance(reference, bpy.types.Object):
         return {"kind": "object", "name": reference.name}
     if isinstance(reference, bpy.types.Collection):

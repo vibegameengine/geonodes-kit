@@ -16,8 +16,55 @@ def socket_by_identifier(sockets, identifier):
     raise KeyError(f"no socket {identifier} among {[socket.identifier for socket in sockets]}")
 
 
+ID_SOCKETS = {
+    "NodeSocketObject": "objects",
+    "NodeSocketCollection": "collections",
+    "NodeSocketMaterial": "materials",
+    "NodeSocketImage": "images",
+}
+
+PRIMITIVES = {
+    "cube": lambda: bpy.ops.mesh.primitive_cube_add(),
+    "plane": lambda: bpy.ops.mesh.primitive_plane_add(),
+}
+
+
 def assign(target, value):
     return value if not isinstance(value, list) else tuple(value)
+
+
+def socket_value(socket, value):
+    library = ID_SOCKETS.get(socket.bl_idname)
+    if library and isinstance(value, str):
+        found = getattr(bpy.data, library).get(value)
+        if found is None:
+            raise KeyError(f"case refers to {library} '{value}' that the case scene does not create")
+        return found
+    return assign(socket, value)
+
+
+def make_object(description):
+    kind = description.get("mesh", "empty")
+    if kind == "empty":
+        obj = bpy.data.objects.new(description["name"], None)
+    else:
+        PRIMITIVES[kind]()
+        obj = bpy.context.active_object
+        for collection in list(obj.users_collection):
+            collection.objects.unlink(obj)
+        obj.name = description["name"]
+    obj.location = description.get("location", (0, 0, 0))
+    obj.rotation_euler = description.get("rotation", (0, 0, 0))
+    obj.scale = description.get("scale", (1, 1, 1))
+    return obj
+
+
+def build_scene(case):
+    for entry in case.get("scene", []):
+        collection = bpy.data.collections.new(entry["collection"])
+        bpy.context.scene.collection.children.link(collection)
+        for description in entry.get("objects", []):
+            collection.objects.link(make_object(description))
 
 
 def build_tree(case):
@@ -32,7 +79,8 @@ def build_tree(case):
     for description in case["tree"]["nodes"]:
         node = nodes[description["name"]]
         for identifier, value in description.get("inputs", {}).items():
-            socket_by_identifier(node.inputs, identifier).default_value = assign(node, value)
+            socket = socket_by_identifier(node.inputs, identifier)
+            socket.default_value = socket_value(socket, value)
     for link in case["tree"]["links"]:
         source = socket_by_identifier(nodes[link["from"][0]].outputs, link["from"][1])
         target = socket_by_identifier(nodes[link["to"][0]].inputs, link["to"][1])
@@ -43,7 +91,13 @@ def build_tree(case):
     return tree
 
 
+def reset_scene():
+    bpy.ops.wm.read_factory_settings(use_empty=True)
+
+
 def evaluate(case):
+    reset_scene()
+    build_scene(case)
     mesh = bpy.data.meshes.new(case["id"])
     obj = bpy.data.objects.new(case["id"], mesh)
     bpy.context.scene.collection.objects.link(obj)
@@ -60,11 +114,17 @@ def main():
     with open(cases_file, encoding="utf8") as handle:
         cases = json.load(handle)
     os.makedirs(output_dir, exist_ok=True)
+    failures = 0
     for case in cases:
-        geometry = evaluate(case)
+        try:
+            geometry = evaluate(case)
+        except Exception as error:
+            failures += 1
+            print(f"[geonodes] FAILED {case['id']}: {type(error).__name__}: {error}")
+            continue
         with open(os.path.join(output_dir, f"{case['id']}.json"), "w", encoding="utf8") as handle:
             json.dump({"blender": bpy.app.version_string, "case": case, "geometry": geometry}, handle, indent=1, allow_nan=False)
-        print(f"[geonodes] {case['id']}: {sorted(geometry)}")
+    print(f"[geonodes] {len(cases) - failures} captured, {failures} failed")
 
 
 main()
